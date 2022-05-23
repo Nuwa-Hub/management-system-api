@@ -29,6 +29,6 @@ app.use("/api/tasks",taskRoute);
 app.use("/api/chores",choreRoute);
 app.use("/api/notifications",NotificationRoute);
 
-app.listen(5000,()=>{
+app.listen(process.env.PORT || 5000,()=>{
     console.log("backend server is running! ")
 })
