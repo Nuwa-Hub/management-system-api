@@ -67,7 +67,7 @@ router.post("/login", async (req, res) => {
 });
 
 //CHNAGE PASSWORD
-router.post("/changepassword",verifyTokenAndAdmin, async (req, res) => {
+router.post("/changepassword", async (req, res) => {
   try {
     
     const user = await User.findOne({ _id: req.body.userId });
